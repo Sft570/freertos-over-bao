@@ -52,7 +52,7 @@ void vTask(void *pvParameters)
     unsigned long id = (unsigned long)pvParameters;
     while (1)
     {
-        printf("AAAAAAAAAA Task%d: %d\n", id, counter++); 
+        printf("Test Task%d: %d\n", id, counter++); 
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
